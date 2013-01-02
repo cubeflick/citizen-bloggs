@@ -1474,11 +1474,15 @@ ul.breadcrumb li.last a{
     padding: 5px;
     width: 267px;
 	border:1px #D3D3D3 solid;
+	margin-bottom: 15px;
 }
-.vote-right .field-label
+
+.vote-right .field-label{
+	float:none;
+}
+.vote-right .inline
 {
-	float:left;
-	margin-right: 5px;
+	display:inline-block;
 }
 .vote-right div
 {
@@ -1679,9 +1683,12 @@ text-decoration: none;
 #advpoll-choice-add-more-wrapper .form-item .tabledrag-toggle-weight-wrapper a:hover{
 	background: none repeat scroll 0 0 #FFFFFF;
 }
-#advpoll-choice-values field-label{
-	float: inherit;
-	}
+#advpoll-choice-values{
+	margin-top:10px;
+}
+#advpoll-choice-values .field-label{
+	float:none;
+}
 #advpoll-choice-values .form-type-textfield input#edit-advpoll-choice-und-0-choice{
 	width: 630px;
 }

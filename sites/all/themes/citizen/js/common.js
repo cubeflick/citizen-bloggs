@@ -46,4 +46,23 @@ jQuery(function(){
 	
 	 jQuery(".block-menu-logged-out-main-menu").clone().prependTo("#region-footer-first");
 	
+	 
+	 /* Place poll form at appropriate place
+	  * 
+	  */
+	 //jQuery(".vote-right").before(jQuery("form[id^='advpoll-form']"));
+	 
+	 
+	 $strHtml = "";
+	 
+	 jQuery("div.vote-fields").each(function(){
+		 $strHtml =	$strHtml + jQuery(this).html();
+		 jQuery(this).remove();
+	 });
+	 
+	 $strHtml = "<div class='vote-right'>"+$strHtml+"</div>";
+
+	 jQuery("form[id^='advpoll-form']").after($strHtml);
+	 jQuery("div.vote-right").prepend('<div class="vote-fields"><div class="vote-metrices">Vote Details</div></div>');
+	 
 });
