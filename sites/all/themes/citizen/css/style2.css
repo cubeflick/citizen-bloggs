@@ -382,13 +382,15 @@ figure {
 .profile-panel .add-new-content .pane-content p{
     display: inline-block;
     text-align: center;
-    width: 48%;
+    width: 42%;
     margin: 0px;
+    padding: 5px;
 }
 .profile-panel .add-new-content .pane-content p.hap
 {
 	 border-right: 1px solid #59BADA;
 	  border-bottom: 1px solid #59BADA;
+	  margin-left: 1px;
 }
 
 .profile-panel .add-new-content .pane-content p.votes
@@ -399,12 +401,13 @@ figure {
 .profile-panel .add-new-content .pane-content p.action
 {
 	 border-left: 1px solid #59BADA;
-	  border-top: 1px solid #59BADA;
+	  
 }
 .profile-panel .add-new-content .pane-content p.discussion
 {
 	 border-right: 1px solid #59BADA;
-	  border-top: 1px solid #59BADA;
+	 margin-left: 1px;
+	 
 }
 .profile-panel .add-new-content .pane-content
 {
@@ -1276,20 +1279,19 @@ ul.lavaLampNoImage li.menu-218 a:hover{
     font-size: 30px;
     font-family: Calibri;
 }
-#region-content ul.tabs{
-	background-image: url("../images/bmeain.jpg");
-    background-repeat: repeat-y;
-    border-radius: 155px 155px 10px 10px;
-    display: block;
-    float: right;
-    height: 41px;
-    margin-top: 24px;
-    width: 606px;
-	display:none;
+#region-content ul.tabs li{
+	
+    display: none;
+   
+}
+#region-content ul.tabs li:nth-child(4)
+{
+	
 }
 
+
 #region-content ul.tabs a{
-	color: #FFFFFF;
+	color: #ffffff;
     cursor: pointer;
     display: inline-block;
     font-family: Calibri;
@@ -1472,7 +1474,7 @@ ul.breadcrumb li.last a{
 }
 .forum-post-links{
 	line-height: normal;
-	margin:0
+	margin:0 0 11px;
 }
 .forum-post-links ul{
 	margin-bottom:10px;
@@ -1608,7 +1610,8 @@ cursor: pointer;
     float: right;
     height: 44px;
     background-color: #D3D3D3;
-    margin-top: 24px
+    margin-top: 24px;
+   margin-bottom: 50px;
 }
 
 .zone-user .block-menu-logged-out-main-menu ul.menu li a {
@@ -1675,14 +1678,28 @@ form#subscriptions-ui-node-form{
    vertical-align: top;
  }
  #action-node-form .field-name-field-forum-reference{
- float:right;
+ float:left;
+     margin-right: 43px;
+    margin-top: 46px;
+ }
+ #action-node-form #edit-field-vote-reference-und{
+ width:219px;
+ }
+ #action-node-form #edit-field-invite-users-und{
+ width:229px;
+ }
+ #action-node-form #edit-group-audience-und{
+ width:197px;
+ }
+ #action-node-form #edit-field-haps-reference-und{
+ width:200px;
  }
  #action-node-form .field-name-field-haps-reference label
  {
    display:inline-block;
    vertical-align: top;
    
- }
+}
  #action-node-form .field-name-field-invite-users label
  {
  display:inline-block;
@@ -1966,8 +1983,285 @@ text-decoration: none;
 	margin-top: -29px;
 	margin-left: 15px;
 }
-#edit-actions--2
+#user-login-form #edit-actions--2
 {
 	float: left;
-    margin: 0px !important;
+    margin: 0 10px 0 0 !important;
+    
 }
+#user-login-form #edit-actions
+{
+	float: left;
+    margin: 0 10px 0 0 !important;
+}
+
+#user-login-form div input:not([type='submit']) {
+	 width: 180px;
+}
+#user-login-form .item-list ul li.last a
+{
+	padding: 3px 41px 4px !important;
+}
+#user-login-form .item-list ul li.last
+{
+	margin: 15px 0 10px 0 !important;
+}
+.facebook-action-connect img
+{
+	margin: 0px 50px;
+
+}
+
+#user-login-form
+{
+ padding: 0 5px;
+    width: 182px;
+border: 1px solid #d3d3d3;
+ border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+}
+#user-register-form #edit-account input
+{
+	width: 698px;
+}
+.calendar-action-menu
+{
+	float: left;
+	margin-right: 10px;
+}
+.view-my-events-list .view-content
+{
+	border-bottom: 1px solid #BEBDD1;
+    border-left: 1px solid #BEBDD1;
+    border-radius: 0 0 14px 0;
+    border-right: 1px solid #BEBDD1;
+    color: #666666;
+    float: left;
+    font-family: Calibri;
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding: 4px;
+    
+}
+
+#region-sidebar-second div.view-content .views-row, #region-footer-first div.view-content .views-row
+{
+	background: url("../images/bullet.png") no-repeat scroll left 7px transparent;
+	padding: 0 0 0 12px;
+}
+
+.subscriptions-subscribe a{
+	-webkit-appearance: none;
+-moz-border-radius: 11px;
+-webkit-border-radius: 11px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding;
+background-clip: padding-box;
+border-radius: 11px;
+background: #DDD url(../images/button.png) repeat-x;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #DDD));
+background: -moz-linear-gradient(top center, white 0%, #DDD 100%);
+border: 1px solid;
+border-color: #DDD #BBB #999;
+cursor: pointer;
+color: #333;
+font: bold 12px/1.2 Arial, sans-serif;
+outline: 0;
+overflow: visible;
+padding: 3px 10px 4px;
+text-shadow: white 0 1px 1px;
+width: auto;
+text-decoration: none;
+}
+.subscriptions-subscribe a:hover{
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+.user-picture img{
+	   	height: 150px;
+	    width: 150px;
+}
+.forum-post-wrapper .user-picture img{
+	float: left;
+    margin-bottom: 5px;
+    margin-top: 6px;
+}
+.forum-post-title{
+	font-size: 17px;
+	margin-bottom:5px
+}
+#action-node-form thead th
+{
+	 background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000000;
+    }
+#action-node-form thead{
+	border-left: none;
+}
+#hap-node-form #edit-field-actions-reference .form-item .form-acti{
+	margin-bottom: 2em;
+}
+#advpoll-node-form #edit-group-audience-und{
+	width: 260px;
+}
+#advpoll-node-form #edit-field-haps-reference-und{
+	width: 223px;
+}
+#advpoll-node-form .form-text {
+	width: 615px;
+}
+#forum-node-form .form-text{
+	width: 567px;
+}
+#action-node-form .form-item-title label {
+	display: inline-block;
+}
+#action-node-form .form-item-title .form-text{
+	width: 633px;
+}
+
+.pane-content div.view-content .views-row
+{
+	background: none !important;
+	padding: 0 !important;
+}
+ .zone-footer div.view-content .views-table tbody tr
+ {
+ background: url("../images/bullet.png") no-repeat scroll left 10px transparent !important;
+	padding: 0 0 0 12px;
+ }
+ .zone-footer .view-most-popular-haps div.view-content > div {
+	background: url("../images/bullet.png") no-repeat scroll left 7px transparent;
+	padding: 0 0 0 12px;
+}
+
+#filedepot .yui-layout-unit-center .yui-layout-bd
+{
+	min-width: 650px;
+}
+#filedepot .yui-layout-unit-center .yui-layout-wrap
+{
+	
+	overflow: scroll;
+}
+#zone-header #region-header-second
+{
+	float: right;
+}
+
+#privatemsg-list div #privatemsg-list-form 
+{
+	margin-top: 35px;
+}
+
+#date-node-form #edit-group-audience label
+{
+	float: left;
+}
+
+#field-invite-users-values tbody td div.form-item-field-invite-users-und-0-target-id input#edit-field-invite-users-und-0-target-id
+{
+	width: 100%;
+}
+#pm-block-user-list #edit-new div.fieldset-wrapper input#edit-name
+{
+	width: 100%;
+}
+#pm-block-user-list table.tableheader-processed tbody
+{
+	border: none !important;
+}
+#privatemsg-new div  input#edit-subject, input#edit-recipient
+{
+	width:100%;
+}
+.node-group-of-members .group-right #signup-form a{
+	-webkit-appearance: none;
+-moz-border-radius: 11px;
+-webkit-border-radius: 11px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding;
+background-clip: padding-box;
+border-radius: 11px;
+background: #DDD url(../images/button.png) repeat-x;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #DDD));
+background: -moz-linear-gradient(top center, white 0%, #DDD 100%);
+border: 1px solid;
+border-color: #DDD #BBB #999;
+cursor: pointer;
+color: #333;
+font: bold 12px/1.2 Arial, sans-serif;
+outline: 0;
+overflow: visible;
+padding: 3px 10px 4px;
+text-shadow: white 0 1px 1px;
+width: auto;
+text-decoration: none;
+}
+.node-group-of-members .group-right #signup-form a:hover{
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+.node-date .group-left #signup-form a{
+	-webkit-appearance: none;
+-moz-border-radius: 11px;
+-webkit-border-radius: 11px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding;
+background-clip: padding-box;
+border-radius: 11px;
+background: #DDD url(../images/button.png) repeat-x;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #DDD));
+background: -moz-linear-gradient(top center, white 0%, #DDD 100%);
+border: 1px solid;
+border-color: #DDD #BBB #999;
+cursor: pointer;
+color: #333;
+font: bold 12px/1.2 Arial, sans-serif;
+outline: 0;
+overflow: visible;
+padding: 3px 10px 4px;
+text-shadow: white 0 1px 1px;
+width: auto;
+text-decoration: none;
+}
+.node-date .group-left #signup-form a:hover{
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+.node-action  #signup-form a{
+	-webkit-appearance: none;
+-moz-border-radius: 11px;
+-webkit-border-radius: 11px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding;
+background-clip: padding-box;
+border-radius: 11px;
+background: #DDD url(../images/button.png) repeat-x;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #DDD));
+background: -moz-linear-gradient(top center, white 0%, #DDD 100%);
+border: 1px solid;
+border-color: #DDD #BBB #999;
+cursor: pointer;
+color: #333;
+font: bold 12px/1.2 Arial, sans-serif;
+outline: 0;
+overflow: visible;
+padding: 3px 10px 4px;
+text-shadow: white 0 1px 1px;
+width: auto;
+text-decoration: none;
+}
+.node-action  #signup-form a:hover{
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+.node-action  #signup-form{
+margin: 4px -18px;
+}
+#block-user-login{
+	margin-top:50px;
+	}
+.page-node-add-forum  #edit-field-haps-reference-und{
+	width: 200px;
+}
+	
+	
+	
