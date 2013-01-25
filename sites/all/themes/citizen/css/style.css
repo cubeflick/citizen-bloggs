@@ -404,12 +404,18 @@ margin: 10px 0 10px 5px;
     margin-top: 16px;
 }
 
-.node-date .group-left div
+.node-date .group-left div.inline
 {
 	width: 270px;
 	border: 1px solid #BEBDD1;
     margin-top: 11px;
     padding: 5px;
+}
+.node-date div.field-edit li.first{
+	float:right;
+}
+.node-date div.field-invited-users li.first{
+	float:right;
 }
 .node-date .group-left #signup-form div{
 	border:none;
