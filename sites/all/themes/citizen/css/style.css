@@ -410,11 +410,12 @@ margin: 10px 0 10px 5px;
 	border: 1px solid #BEBDD1;
     margin-top: 11px;
     padding: 5px;
+    border-radius: 10px 10px 10px 10px;
 }
-.node-date div.field-edit li.first{
+.node-date div.field-edit {
 	float:right;
 }
-.node-date div.field-invited-users li.first{
+.node-date div.field-invited-users {
 	float:right;
 }
 .node-date .group-left #signup-form div{
@@ -427,7 +428,7 @@ margin: 10px 0 10px 5px;
 	margin: 10px 10px 10px 0;
 }
 
-.node-date .group-right ul.menu li a
+.node-date div.field-invited-users ul.menu li a
 {
 		-webkit-appearance: none;
 -moz-border-radius: 11px;
@@ -452,7 +453,36 @@ width: auto;
 text-decoration: none;
 margin: 10px 0 10px 5px;
 }
-.node-date .group-right ul.menu li a:hover
+.node-date div.field-invited-users ul.menu li a:hover
+{
+	background: #ffffff;
+}
+.node-date div.field-edit ul.menu li a
+{
+		-webkit-appearance: none;
+-moz-border-radius: 11px;
+-webkit-border-radius: 11px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding;
+background-clip: padding-box;
+border-radius: 11px;
+background: #DDD url(../images/button.png) repeat-x;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #DDD));
+background: -moz-linear-gradient(top center, white 0%, #DDD 100%);
+border: 1px solid;
+border-color: #DDD #BBB #999;
+cursor: pointer;
+color: #333;
+font: bold 12px/1.2 Arial, sans-serif;
+outline: 0;
+overflow: visible;
+padding: 3px 10px 4px;
+text-shadow: white 0 1px 1px;
+width: auto;
+text-decoration: none;
+margin: 10px 0 10px 5px;
+}
+.node-date div.field-edit ul.menu li a:hover
 {
 	background: #ffffff;
 }
@@ -1173,5 +1203,34 @@ display: inline;
     margin-bottom: 20px;
     margin-left: 30px;
 }
+.node-date .group-right div.location{
+	    border: 1px solid #BEBDD1;
+    margin-top: 11px;
+    padding: 5px;
+    width: 270px;
+    border-radius: 10px 10px 10px 10px;
+     margin-bottom: 15px;
+   
+}
+.node-date .block-menu-menu-message-author{
+	float:left;
+}
+.node-date .group-footer h3{
+	float:left;
+	margin-left: 20px;
+}
+.node-date .group-footer{
+	width: 100%;
+}
+.user-profile .group-left .field-about-me,
+.user-profile .group-left .field-group-audience{
+	margin-bottom: 30px;
+}
+.user-profile .group-left h3.field-label{
+	color: #000000;
+	font-size: 13px;
+	letter-spacing: 0em;
+}
+
 
 
