@@ -2049,6 +2049,15 @@ border: 1px solid #d3d3d3;
 	background: url("../images/bullet.png") no-repeat scroll left 7px transparent;
 	padding: 0 0 0 12px;
 }
+#region-sidebar-second div.view-content div, #region-footer-first div.view-content div
+{
+	background: url("../images/bullet.png") no-repeat scroll left 7px transparent;
+	padding: 0 0 0 12px;
+}
+.view-users-group-list div.view-content div.views-field ,.view-my-events-list div.view-content div.views-field {
+	background: url("../images/bullet.png") no-repeat scroll left 7px transparent;
+	padding: 0 0 0 12px;
+	}
 
 .subscriptions-subscribe a{
 	-webkit-appearance: none;
@@ -2253,6 +2262,7 @@ text-decoration: none;
 .node-action  #signup-form a:hover{
 	background: none repeat scroll 0 0 #FFFFFF;
 }
+
 .node-action  #signup-form{
 margin: 4px -18px;
 }
@@ -2262,6 +2272,46 @@ margin: 4px -18px;
 .page-node-add-forum  #edit-field-haps-reference-und{
 	width: 200px;
 }
-	
-	
+
+ #block-menu-menu-message-author ul.menu li.first a{
+	-webkit-appearance: none;
+-moz-border-radius: 11px;
+-webkit-border-radius: 11px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding;
+background-clip: padding-box;
+border-radius: 11px;
+background: #DDD url(../images/button.png) repeat-x;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #DDD));
+background: -moz-linear-gradient(top center, white 0%, #DDD 100%);
+border: 1px solid;
+border-color: #DDD #BBB #999;
+cursor: pointer;
+color: #333;
+font: bold 12px/1.2 Arial, sans-serif;
+outline: 0;
+overflow: visible;
+padding: 3px 10px 4px;
+text-shadow: white 0 1px 1px;
+width: auto;
+text-decoration: none;
+}
+#block-menu-menu-message-author ul.menu li.first a:hover{
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+.node-group-of-members #block-menu-menu-message-author ul.menu{
+	padding-left:0px !important;
+}
+.node-group-of-members #block-menu-menu-message-author{
+	float:left;
+}
+.node-group-of-members .group-left .field-post-date{
+	margin-bottom: 10px
+	}
+.node-group-of-members .group-left .field-private-group{
+	margin-bottom: 10px
+	}
+.node-group-of-members .group-left .field-number-of-users-in-group{
+	margin-bottom: 10px
+	}
 	
